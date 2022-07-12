@@ -1,0 +1,39 @@
+.board_list {
+  display: flex;
+  overflow: auto;
+  /* padding-top: 20px; */
+  height: 82vh;
+  padding: 1rem;
+  background: #001529;
+}
+.title {
+  color: white;
+  font-size: 2rem;
+}
+.default_board {
+  min-width: 20rem;
+  margin: 5px 0;
+}
+.add_board_btn {
+  width: 100%;
+  margin: 2px 2px;
+}
+.btn_div {
+  margin: 1rem 0;
+}
+.btn_div > button {
+  margin-right: 5px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .board_list {
+    flex-direction: column;
+    height: 100%;
+    padding: 2px;
+  }
+}

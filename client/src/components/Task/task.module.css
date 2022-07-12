@@ -1,0 +1,27 @@
+.task_card {
+  padding: 1rem 2rem;
+  background-color: white;
+}
+.card_header {
+  display: flex;
+  justify-content: end;
+}
+.more_options_wrapper {
+  position: relative;
+  width: 10px;
+  height: 20px;
+}
+.more_task {
+  position: absolute;
+  right: 80px;
+  bottom: 0px;
+
+  font-size: 0.6rem !important;
+  z-index: 5;
+}
+.input {
+  color: black !important;
+  background-color: white !important;
+  border: none !important;
+  cursor: pointer !important;
+}

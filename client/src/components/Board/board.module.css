@@ -1,0 +1,86 @@
+.board {
+  background-color: rgb(255 242 242);
+  min-width: 20rem;
+  /* border: 0.1px solid black; */
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border-radius: 6px;
+}
+
+.board_header {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option_card_wrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  z-index: 5;
+}
+
+.option_card {
+  position: absolute;
+  top: 32px;
+  right: -3px;
+  z-index: 5;
+  background: white;
+  padding: 6px 8px;
+  /* padding-top: 10px; */
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+}
+.option_card > button {
+  border: 0;
+}
+.board_body {
+  min-height: 510px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.edit_input {
+  margin-top: 1rem;
+}
+.edit_input > input {
+  height: 33px;
+  font-size: 1rem;
+  /* display: block; */
+}
+.btn_div {
+  margin: 5px 0;
+}
+.btn_div > button {
+  margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .board {
+    margin: 1rem 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(206 206 206);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(141, 140, 140);
+}
